@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多平台会员倒计时</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 输入表单区域 -->
+        <div class="input-section">
+            <h1>会员倒计时</h1>
+            <form id="membershipForm">
+                <div class="form-group">
+                    <label for="platform">平台名称</label>
+                    <input type="text" id="platform" required placeholder="例如：Netflix">
+                </div>
+                <div class="form-group">
+                    <label for="startDate">开始日期</label>
+                    <input type="date" id="startDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="duration">会员时长（天）</label>
+                    <input type="number" id="duration" min="1" required>
+                </div>
+                <button type="submit" class="btn-primary">添加会员卡片</button>
+            </form>
+        </div>
+
+        <!-- 卡片网格区域 -->
+        <div class="cards-grid" id="cardsGrid">
+            <!-- 卡片将通过 JavaScript 动态添加 -->
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html> 
